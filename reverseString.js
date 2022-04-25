@@ -43,12 +43,15 @@ function reverse4(value) {
 }
 
 function reverse5(value) {
-    let arr = value.split("").reduce((acc, curr) => {
-        return acc + curr;
+    value = value.toString();
+
+    let arr = (value).split("").reduce((acc, curr) => {
+        console.log(acc, curr)
+        return curr + acc;
     })
-    console.log(arr)
+    return arr;
 }
 
 
 
-console.log(reverse5(2345));
+console.log(reverse5(123));
